@@ -16,6 +16,14 @@ export default {
 .stat-number {
   @apply block text-tuni text-2xl md:text-6xl mb-1 md:mb-3 font-bold;
 }
+
+.heading {
+  @apply text-2xl md:text-5xl text-tuni font-bold text-center tracking-tight mb-5;
+}
+
+.subtitle {
+  @apply text-lg md:text-xl text-center mb-5;
+}
 </style>
 
 <template>
@@ -23,10 +31,10 @@ export default {
 
     <div class="flex flex-col max-w-7xl mx-auto items-center">
       <div class="w-full md:w-2/3">
-        <h1 class="text-2xl md:text-5xl text-tuni font-bold text-center tracking-tight mb-5">
+        <h1 class="heading">
           Tietojenkäsittelijöiden peliportaali
         </h1>
-        <p class="text-lg md:text-xl text-center mb-5">
+        <p class="subtitle">
           TAMKin tietojenkäsittelyn tutkinto-ohjelmassa ensimmäisen vuoden kevään peliprojektin
           peliportaali. TAMKin tietojenkäsittelyn tutkinto-ohjelmassa ensimmäisen vuoden kevään
           peliprojektin peliportaali.
