@@ -1,7 +1,7 @@
 <script>
 import games from '../games';
 export default {
-  team: 'TikoGames',
+  name: 'TikoGames',
   data() {
     return {
       games
