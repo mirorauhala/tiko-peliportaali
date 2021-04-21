@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="border-black border-b-2 border-opacity-5 py-5">
+  <div class="py-5">
     <nav class="max-w-7xl mx-auto px-3 h-full">
       <ul class="flex flex-row justify-between items-end h-full">
         <li>

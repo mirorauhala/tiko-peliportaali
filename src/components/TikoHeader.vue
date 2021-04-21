@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <header class="p-3 pt-20 md:py-32">
+  <header class="bg-gradient p-3 pt-20 md:py-32">
     <div class="flex flex-col max-w-7xl mx-auto items-center">
       <div class="w-2/3">
         <h1
