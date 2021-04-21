@@ -16,6 +16,7 @@
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.10",
     "tailwindcss": "^2.1.1",
-    "vite": "^2.1.5"
+    "vite": "^2.1.5",
+    "vue-cli-plugin-i18n": "~2.1.0"
   }
 }
