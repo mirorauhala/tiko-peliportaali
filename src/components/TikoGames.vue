@@ -24,7 +24,7 @@ export default {
 
       <div class="flex flex-wrap justify-center">
         <article
-          class="w-1/3"
+          class="w-full md:w-1/3"
           v-for="game in this.games">
           <a class="block p-1.5" href="#" target="_blank">
             <div class="mb-2">
