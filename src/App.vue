@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <tiko-bar></tiko-bar>
+  <tiko-header></tiko-header>
+  <tiko-games></tiko-games>
+  <tiko-sponsors></tiko-sponsors>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import TikoBar from './components/TikoBar.vue';
+import TikoHeader from './components/TikoHeader.vue';
+import TikoGames from './components/TikoGames.vue';
+import TikoSponsors from './components/TikoSponsors.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    TikoBar,
+    TikoHeader,
+    TikoGames,
+    TikoSponsors,
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  @apply font-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
