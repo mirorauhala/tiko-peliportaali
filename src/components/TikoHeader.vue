@@ -1,6 +1,35 @@
 <script>
+import games from "../games";
+
 export default {
   name: 'TikoHeader',
+  props: ['language'],
+
+  data() {
+    return {
+      messages: {
+        fi: {
+          heading: 'Tietojenkäsittelijöiden peliportaali',
+          subtitle: 'TAMKin tietojenkäsittelyn tutkinto-ohjelman ensimmäisen vuoden peliprojektin\n' +
+            'peliportaali. TAMKin tietojenkäsittelyn tutkinto-ohjelmassa ensimmäisen vuoden\n' +
+            'peliprojektin peliportaali.',
+          teams: 'tiimiä',
+          students: 'opiskelijaa',
+          games: 'peliä',
+        },
+        
+        en: {
+          heading: 'Computer scientist',
+          subtitle: 'The game portal of TAMK\'s first year computer sciences students.' +
+            'The game portal of TAMK\'s first year computer sciences students.',
+          teams: 'teams',
+          students: 'students',
+          games: 'games',
+        }
+      },
+      games
+    }
+  }
 };
 </script>
 
@@ -31,27 +60,21 @@ export default {
 
     <div class="flex flex-col max-w-7xl mx-auto items-center">
       <div class="w-full md:w-2/3">
-        <h1 class="heading">
-          Tietojenkäsittelijöiden peliportaali
-        </h1>
-        <p class="subtitle">
-          TAMKin tietojenkäsittelyn tutkinto-ohjelmassa ensimmäisen vuoden kevään peliprojektin
-          peliportaali. TAMKin tietojenkäsittelyn tutkinto-ohjelmassa ensimmäisen vuoden kevään
-          peliprojektin peliportaali.
-        </p>
+        <h1 class="heading" v-text="messages[language].heading"></h1>
+        <p class="subtitle" v-text="messages[language].subtitle"></p>
       </div>
 
       <div class="statistics">
         <div class="stat">
-          <h2><span class="stat-number">73</span> tiimiä</h2>
+          <h2><span class="stat-number">73</span> <span v-text="messages[language].students"></span></h2>
         </div>
 
         <div class="stat">
-          <h2><span class="stat-number">73</span> tiimiä</h2>
+          <h2><span class="stat-number">73</span> <span v-text="messages[language].teams"></span></h2>
         </div>
 
         <div class="stat">
-          <h2><span class="stat-number">73</span> tiimiä</h2>
+          <h2><span class="stat-number">73</span> <span v-text="messages[language].games"></span></h2>
         </div>
       </div>
     </div>

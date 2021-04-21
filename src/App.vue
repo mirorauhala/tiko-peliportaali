@@ -1,8 +1,12 @@
 <template>
-  <tiko-bar></tiko-bar>
-  <tiko-header></tiko-header>
-  <tiko-games></tiko-games>
-  <tiko-sponsors></tiko-sponsors>
+  <tiko-bar
+    :language="language"
+    @languageChange="updateLanguage"
+
+  />
+  <tiko-header :language="language"></tiko-header>
+  <tiko-games :language="language"></tiko-games>
+  <tiko-sponsors :language="language"></tiko-sponsors>
 </template>
 
 <script>
@@ -19,6 +23,20 @@ export default {
     TikoGames,
     TikoSponsors,
   },
+  data() {
+    return {
+      language: 'fi',
+    }
+  },
+  methods: {
+    updateLanguage() {
+      if(this.language === 'fi') {
+        this.language = 'en'
+      } else {
+        this.language = 'fi';
+      }
+    }
+  }
 };
 </script>
 
