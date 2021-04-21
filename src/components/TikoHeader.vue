@@ -17,7 +17,7 @@ export default {
           students: 'opiskelijaa',
           games: 'peliä',
         },
-        
+
         en: {
           heading: 'Computer scientist',
           subtitle: 'The game portal of TAMK\'s first year computer sciences students.' +
