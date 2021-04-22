@@ -39,7 +39,7 @@ export default {
         <article
           class="w-full md:w-1/3 mb-3 md:mb-5 hover:text-tuni"
           v-for="game in this.games">
-          <a class="block p-1.5" href="#" target="_blank">
+          <a class="block p-1.5" :href="game.link" target="_blank">
             <img :src="game.image" class="mb-2" alt="">
             <h1 class="text-xl font-bold tracking-tight" v-text="game.name"></h1>
             <p class="uppercase opacity-80 tracking-tight" v-text="game.team"></p>
