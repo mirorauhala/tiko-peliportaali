@@ -49,7 +49,7 @@ export default [
   },
   {
     id: 5,
-    name: 'The name of the game goes here',
+    name: 'Mental Survival',
     team: '20tiko1e',
     link: 'https://webpages.tuni.fi/20tiko1e',
     image: tiko1e,
@@ -91,7 +91,7 @@ export default [
   },*/
   {
     id: 11,
-    name: 'The name of the game goes here',
+    name: 'Tunteiden Veto',
     team: '20tiko2e',
     link: 'https://webpages.tuni.fi/20tiko2e',
     image: tiko2e,
@@ -112,7 +112,7 @@ export default [
   },*/
   {
     id: 14,
-    name: 'The name of the game goes here',
+    name: 'Turn or Fall',
     team: '20tiko3a',
     link: 'https://webpages.tuni.fi/20tiko3a',
     image: tiko3a,
@@ -126,7 +126,7 @@ export default [
   },
   {
     id: 16,
-    name: 'The name of the game goes here',
+    name: 'Exclusion Preventers',
     team: '20tiko3c',
     link: 'https://webpages.tuni.fi/20tiko3c',
     image: tiko3c,
@@ -147,7 +147,7 @@ export default [
   },
   {
     id: 19,
-    name: 'The name of the game goes here',
+    name: 'MindSlicer',
     team: '20tiko3f',
     link: 'https://webpages.tuni.fi/20tiko3f',
     image: tiko3f,
