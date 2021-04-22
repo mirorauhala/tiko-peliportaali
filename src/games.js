@@ -142,7 +142,7 @@ export default [
   },
   {
     id: 18,
-    name: 'The name of the game goes here',
+    name: 'Labyrinth Conquest',
     team: '20tiko3e',
     link: 'https://webpages.tuni.fi/20tiko3e',
     image: tiko3e,
