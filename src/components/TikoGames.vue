@@ -7,6 +7,7 @@ export default {
 
   data() {
     return {
+      query: '',
       messages: {
         fi: {
           heading: 'Pelit',
@@ -19,6 +20,17 @@ export default {
       },
       games
     }
+  },
+  computed: {
+    resultQuery(){
+      if(this.games){
+        return this.games.filter(game => {
+          return this.query.toLowerCase().split(' ').every(v => game.name.toLowerCase().includes(v))
+        })
+      }else{
+        return this.games;
+      }
+    }
   }
 };
 </script>
@@ -29,8 +41,10 @@ export default {
       <h1 class="text-4xl font-bold mb-5 text-center" v-text="messages[language].heading"></h1>
       <input
         type="text"
+        v-model="query"
         class="text-lg md:text-xl px-3 md:px-6 w-full h-16 md:h-20 border-4 border-opacity-20 border-black transition delay-100
-        ease-out focus:text-tuni focus:outline-none focus:border-tuni" :placeholder="messages[language].searchPlaceholder">
+        ease-out focus:text-tuni focus:outline-none focus:border-tuni"
+        :placeholder="messages[language].searchPlaceholder">
     </div>
 
     <div class="xl:-m-1.5">
@@ -38,7 +52,7 @@ export default {
       <div class="flex flex-wrap justify-center">
         <article
           class="w-full md:w-1/3 mb-3 md:mb-5 hover:text-tuni"
-          v-for="game in this.games">
+          v-for="game in resultQuery">
           <a class="block p-1.5" :href="game.link" target="_blank">
             <img :src="game.image" class="mb-2" alt="">
             <h1 class="text-xl font-bold tracking-tight" v-text="game.name"></h1>
