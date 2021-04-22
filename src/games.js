@@ -10,12 +10,14 @@ import tiko2c from './assets/img/games/20tiko2c.png';
 //import tiko2d from './assets/img/games/20tiko2d.png';
 import tiko2e from './assets/img/games/20tiko2e.png';
 import tiko2f from './assets/img/games/20tiko2f.png';
+//import tiko2g from './assets/img/games/20tiko2g.png';
 import tiko3a from './assets/img/games/20tiko3a.png';
 import tiko3b from './assets/img/games/20tiko3b.png';
 import tiko3c from './assets/img/games/20tiko3c.png';
 import tiko3d from './assets/img/games/20tiko3d.png';
 import tiko3e from './assets/img/games/20tiko3e.png';
 import tiko3f from './assets/img/games/20tiko3f.png';
+import nologo from './assets/img/games/nologo.png';
 
 
 export default [
@@ -82,13 +84,13 @@ export default [
     link: 'https://webpages.tuni.fi/20tiko2c',
     image: tiko2c,
   },
-  /*{
+  {
     id: 10,
     name: 'The name of the game goes here',
     team: '20tiko2d',
     link: 'https://webpages.tuni.fi/20tiko2d',
-    image: 20tiko2d,
-  },*/
+    image: nologo,
+  },
   {
     id: 11,
     name: 'Tunteiden Veto',
@@ -103,13 +105,13 @@ export default [
     link: 'https://webpages.tuni.fi/20tiko2f',
     image: tiko2f,
   },
-  /*{
+  {
     id: 13,
-    name: 'The name of the game goes here',
+    name: 'Tower of Life',
     team: '20tiko2g',
     link: 'https://webpages.tuni.fi/20tiko2g',
-    image: tiko2g,
-  },*/
+    image: nologo,
+  },
   {
     id: 14,
     name: 'Turn or Fall',
@@ -133,7 +135,7 @@ export default [
   },
   {
     id: 17,
-    name: 'The name of the game goes here',
+    name: 'Forest of Fellowship',
     team: '20tiko3d',
     link: 'https://webpages.tuni.fi/20tiko3d',
     image: tiko3d,
