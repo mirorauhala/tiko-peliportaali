@@ -37,14 +37,14 @@ export default [
   },
   {
     id: 3,
-    name: 'The name of the game goes here',
+    name: 'KäsiBlästeri',
     team: '20tiko1c',
     link: 'https://webpages.tuni.fi/20tiko1c',
     image: tiko1c,
   },
   {
     id: 4,
-    name: 'The name of the game goes here',
+    name: 'Labyrinth of Life',
     team: '20tiko1d',
     link: 'https://webpages.tuni.fi/20tiko1d',
     image: tiko1d,
@@ -58,7 +58,7 @@ export default [
   },
   {
     id: 6,
-    name: 'The name of the game goes here',
+    name: 'MindPuzzle',
     team: '20tiko1f',
     link: 'https://webpages.tuni.fi/20tiko1f',
     image: tiko1f,
@@ -86,7 +86,7 @@ export default [
   },
   {
     id: 10,
-    name: 'The name of the game goes here',
+    name: 'Feelin\' Ballz',
     team: '20tiko2d',
     link: 'https://webpages.tuni.fi/20tiko2d',
     image: nologo,
@@ -100,7 +100,7 @@ export default [
   },
   {
     id: 12,
-    name: 'The name of the game goes here',
+    name: 'Emotion Runner',
     team: '20tiko2f',
     link: 'https://webpages.tuni.fi/20tiko2f',
     image: tiko2f,
