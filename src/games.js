@@ -103,13 +103,13 @@ export default [
     link: 'https://webpages.tuni.fi/20tiko2f',
     image: tiko2f,
   },
-  {
+  /*{
     id: 13,
     name: 'The name of the game goes here',
     team: '20tiko2g',
     link: 'https://webpages.tuni.fi/20tiko2g',
-    image: tiko2f,
-  },
+    image: tiko2g,
+  },*/
   {
     id: 14,
     name: 'The name of the game goes here',
