@@ -28,13 +28,23 @@ export default {
       language: 'fi',
     }
   },
+  mounted() {
+    const storedLanguage = localStorage.getItem('language');
+    if(storedLanguage) {
+      this.language = storedLanguage;
+    }
+  },
   methods: {
     updateLanguage() {
+      let newLang;
       if(this.language === 'fi') {
-        this.language = 'en'
+        newLang = 'en'
       } else {
-        this.language = 'fi';
+        newLang = 'fi';
       }
+
+      this.language = newLang;
+      localStorage.setItem('language', newLang)
     }
   }
 };
