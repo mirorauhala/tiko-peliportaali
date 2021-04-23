@@ -11,11 +11,13 @@ export default {
       messages: {
         fi: {
           heading: 'Pelit',
-          searchPlaceholder: 'Hae pelejä...'
+          searchPlaceholder: 'Hae pelejä...',
+          noResultsHeading: 'Hakusi ei tuottanut tuloksia'
         },
         en: {
           heading: 'Games',
-          searchPlaceholder: 'Search games...'
+          searchPlaceholder: 'Search games...',
+          noResultsHeading: 'Your search returned no results'
         }
       },
       games
@@ -48,19 +50,30 @@ export default {
     </div>
 
     <div class="xl:-m-1.5">
+      <template v-if="resultQuery.length > 0">
 
-      <div class="flex flex-wrap justify-center">
-        <article
-          class="w-full md:w-1/3 mb-3 md:mb-5 hover:text-tuni"
-          v-for="game in resultQuery">
-          <a class="block p-1.5" :href="game.link" target="_blank">
-            <img :src="game.image" class="mb-2" alt="">
-            <h1 class="text-xl font-bold tracking-tight" v-text="game.name"></h1>
-            <p class="uppercase opacity-80 tracking-tight" v-text="game.team"></p>
-          </a>
-        </article>
+        <div class="flex flex-wrap justify-center min-h-full">
+          <article
+            class="w-full md:w-1/3 mb-3 md:mb-5 hover:text-tuni"
+            v-for="game in resultQuery">
+            <a class="block p-1.5" :href="game.link" target="_blank">
+              <img :src="game.image" class="mb-2" alt="">
+              <h1 class="text-xl font-bold tracking-tight" v-text="game.name"></h1>
+              <p class="uppercase opacity-80 tracking-tight" v-text="game.team"></p>
+            </a>
+          </article>
+        </div>
+      </template>
 
+      <div class="flex flex-wrap justify-center min-h-full" v-else>
+        <div class="h-36 md:h-96 w-full flex items-start justify-center p-1.5">
+          <div class="w-full md:w-4/6	rounded-2xl bg-gray-100 mt-3 md:mt-10 p-10">
+            <h1 class="text-xl font-bold text-gray-800 text-center" v-text="messages[language].noResultsHeading"></h1>
+          </div>
+          <p></p>
+        </div>
       </div>
+
     </div>
   </section>
 </template>
