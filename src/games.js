@@ -10,7 +10,7 @@ import tiko2c from './assets/img/games/20tiko2c.png';
 //import tiko2d from './assets/img/games/20tiko2d.png';
 import tiko2e from './assets/img/games/20tiko2e.png';
 import tiko2f from './assets/img/games/20tiko2f.png';
-//import tiko2g from './assets/img/games/20tiko2g.png';
+import tiko2g from './assets/img/games/20tiko2g.png';
 import tiko3a from './assets/img/games/20tiko3a.png';
 import tiko3b from './assets/img/games/20tiko3b.png';
 import tiko3c from './assets/img/games/20tiko3c.png';
@@ -110,7 +110,7 @@ export default [
     name: 'Tower of Life',
     team: '20tiko2g',
     link: 'https://webpages.tuni.fi/20tiko2g',
-    image: nologo,
+    image: tiko2g,
   },
   {
     id: 14,
