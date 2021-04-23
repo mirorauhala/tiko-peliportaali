@@ -25,7 +25,7 @@ export default {
     resultQuery(){
       if(this.games){
         return this.games.filter(game => {
-          return this.query.toLowerCase().split(' ').every(v => game.name.toLowerCase().includes(v))
+          return this.query.toLowerCase().split(' ').every(v => game.name.toLowerCase().includes(v) || game.team.toLowerCase().includes(v))
         })
       }else{
         return this.games;
