@@ -11,12 +11,12 @@ export default {
       messages: {
         fi: {
           heading: 'Pelit',
-          searchPlaceholder: 'Hae pelejä...',
+          searchPlaceholder: 'Hae pelejä tai tiimiä...',
           noResultsHeading: 'Hakusi ei tuottanut tuloksia'
         },
         en: {
           heading: 'Games',
-          searchPlaceholder: 'Search games...',
+          searchPlaceholder: 'Search games or team name...',
           noResultsHeading: 'Your search returned no results'
         }
       },
