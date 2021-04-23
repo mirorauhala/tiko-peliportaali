@@ -23,7 +23,7 @@ import nologo from './assets/img/games/nologo.png';
 export default [
   {
     id: 1,
-    name: 'The name of the game goes here',
+    name: 'Mental Run',
     team: '20tiko1a',
     link: 'https://webpages.tuni.fi/20tiko1a',
     image: tiko1a,
@@ -65,7 +65,7 @@ export default [
   },
   {
     id: 7,
-    name: 'The name of the game goes here',
+    name: 'ZenSpace',
     team: '20tiko2a',
     link: 'https://webpages.tuni.fi/20tiko2a',
     image: tiko2a,
@@ -79,7 +79,7 @@ export default [
   },
   {
     id: 9,
-    name: 'The name of the game goes here',
+    name: 'Mood pipes',
     team: '20tiko2c',
     link: 'https://webpages.tuni.fi/20tiko2c',
     image: tiko2c,
@@ -121,7 +121,7 @@ export default [
   },
   {
     id: 15,
-    name: 'The name of the game goes here',
+    name: 'Nightmarescape',
     team: '20tiko3b',
     link: 'https://webpages.tuni.fi/20tiko3b',
     image: tiko3b,
