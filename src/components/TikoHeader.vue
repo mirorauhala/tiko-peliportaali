@@ -19,7 +19,7 @@ export default {
 
         en: {
           heading: 'Computer scientist\'s game portal',
-          subtitle: 'The game portal of TAMK\'s first year students in computer science.' +
+          subtitle: 'The game portal of TAMK\'s first year students in computer science. ' +
             'Made as a part of the Eläytyen Osalliseksi ESR -project.',
           teams: 'teams',
           students: 'students',
