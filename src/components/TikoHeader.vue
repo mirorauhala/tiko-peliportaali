@@ -11,17 +11,16 @@ export default {
         fi: {
           heading: 'Tietojenkäsittelijöiden peliportaali',
           subtitle: 'TAMKin tietojenkäsittelyn tutkinto-ohjelman ensimmäisen vuoden peliprojektin\n' +
-            'peliportaali. TAMKin tietojenkäsittelyn tutkinto-ohjelmassa ensimmäisen vuoden\n' +
-            'peliprojektin peliportaali.',
+            'peliportaali. Tehty osana Eläytyen Osalliseksi ESR -hanketta.',
           teams: 'tiimiä',
           students: 'opiskelijaa',
           games: 'peliä',
         },
 
         en: {
-          heading: 'Computer scientist',
-          subtitle: 'The game portal of TAMK\'s first year computer sciences students.' +
-            'The game portal of TAMK\'s first year computer sciences students.',
+          heading: 'Computer scientist\'s game portal',
+          subtitle: 'The game portal of TAMK\'s first year students in computer science.' +
+            'Made as a part of the Eläytyen Osalliseksi ESR -project.',
           teams: 'teams',
           students: 'students',
           games: 'games',
@@ -66,15 +65,15 @@ export default {
 
       <div class="statistics">
         <div class="stat">
-          <h2><span class="stat-number">73</span> <span v-text="messages[language].students"></span></h2>
+          <h2><span class="stat-number">88</span> <span v-text="messages[language].students"></span></h2>
         </div>
 
         <div class="stat">
-          <h2><span class="stat-number">73</span> <span v-text="messages[language].teams"></span></h2>
+          <h2><span class="stat-number">19</span> <span v-text="messages[language].teams"></span></h2>
         </div>
 
         <div class="stat">
-          <h2><span class="stat-number">73</span> <span v-text="messages[language].games"></span></h2>
+          <h2><span class="stat-number">19</span> <span v-text="messages[language].games"></span></h2>
         </div>
       </div>
     </div>
