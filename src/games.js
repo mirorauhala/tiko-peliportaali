@@ -7,7 +7,7 @@ import tiko1f from './assets/img/games/20tiko1f.png';
 import tiko2a from './assets/img/games/20tiko2a.png';
 import tiko2b from './assets/img/games/20tiko2b.png';
 import tiko2c from './assets/img/games/20tiko2c.png';
-//import tiko2d from './assets/img/games/20tiko2d.png';
+import tiko2d from './assets/img/games/20tiko2d.png';
 import tiko2e from './assets/img/games/20tiko2e.png';
 import tiko2f from './assets/img/games/20tiko2f.png';
 import tiko2g from './assets/img/games/20tiko2g.png';
@@ -89,7 +89,7 @@ export default [
     name: 'Feelin\' Ballz',
     team: '20tiko2d',
     link: 'https://webpages.tuni.fi/20tiko2d',
-    image: nologo,
+    image: tiko2d,
   },
   {
     id: 11,
