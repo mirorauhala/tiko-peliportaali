@@ -33,18 +33,21 @@ export default {
     if(storedLanguage) {
       this.language = storedLanguage;
     }
+
+    this.setAppLanguage();
+
+    window.addEventListener('hashchange', this.setAppLanguage)
   },
   methods: {
-    updateLanguage() {
-      let newLang;
-      if(this.language === 'fi') {
-        newLang = 'en'
-      } else {
-        newLang = 'fi';
-      }
+    setAppLanguage() {
+      this.language = window.location.hash === '#fi' ? 'fi' : 'en';
+    },
 
-      this.language = newLang;
+    updateLanguage() {
+      let newLang = this.language === 'fi' ? 'en' : 'fi';
       localStorage.setItem('language', newLang)
+      history.pushState(null,null,'#' + newLang)
+      this.language = newLang
     }
   }
 };
