@@ -65,7 +65,7 @@ export default {
 
       <div class="statistics">
         <div class="stat">
-          <h2><span class="stat-number">88</span> <span v-text="messages[language].students"></span></h2>
+          <h2><span class="stat-number">87</span> <span v-text="messages[language].students"></span></h2>
         </div>
 
         <div class="stat">
