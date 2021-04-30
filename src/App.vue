@@ -26,13 +26,17 @@ export default {
   data() {
     return {
       language: 'fi',
+      messages: {
+        fi: {
+          title: "20TIKO PELIPORTAALI - ELÄYTYEN OSALLISEKSI"
+        },
+        en: {
+          title: "20TIKO GAME PORTAL - ELÄYTYEN OSALLISEKSI"
+        }
+      }
     }
   },
   mounted() {
-    const storedLanguage = localStorage.getItem('language');
-    if(storedLanguage) {
-      this.language = storedLanguage;
-    }
 
     this.setAppLanguage();
 
@@ -40,14 +44,19 @@ export default {
   },
   methods: {
     setAppLanguage() {
-      this.language = window.location.hash === '#fi' ? 'fi' : 'en';
+      this.language = window.location.hash === '#en' ? 'en' : 'fi';
+      this.setWindowTitle();
+    },
+
+    setWindowTitle() {
+      document.title = this.messages[this.language].title
     },
 
     updateLanguage() {
       let newLang = this.language === 'fi' ? 'en' : 'fi';
-      localStorage.setItem('language', newLang)
       history.pushState(null,null,'#' + newLang)
       this.language = newLang
+      this.setWindowTitle()
     }
   }
 };
