@@ -19,7 +19,7 @@
   <article
     v-if="language === 'en'"
     class="max-w-4xl mx-auto mb-12 px-3">
-    <p class="text-lg mb-5 leading-relaxed">lorem ipsum dolor sit amet</p>
+    <p class="text-lg mb-5 leading-relaxed">English version coming soon.</p>
   </article>
 </template>
 
