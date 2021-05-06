@@ -8,6 +8,7 @@ export default {
   data() {
     return {
       query: '',
+      cat: 1,
       messages: {
         fi: {
           heading: 'Pelit',
@@ -23,15 +24,22 @@ export default {
       games
     }
   },
+  methods: {
+    buttonClass(active) {
+      return this.cat === active ? 'bg-tuni text-white hover:text-white hover:text-opacity-80' : 'text-tuni'
+    }
+  },
   computed: {
-    resultQuery(){
-      if(this.games){
+    resultQuery() {
+      if(this.query.length > 0){
         return this.games.filter(game => {
-          return this.query.toLowerCase().split(' ').every(v => game.name.toLowerCase().includes(v) || game.team.toLowerCase().includes(v))
+          return this.query.toLowerCase()
+            .split(' ')
+            .every(v => game.name.toLowerCase().includes(v) || game.team.toLowerCase().includes(v))
         })
-      }else{
-        return this.games;
       }
+
+      return this.games.filter(game => game.cat === parseInt(this.cat))
     }
   }
 };
@@ -47,6 +55,23 @@ export default {
         class="text-lg md:text-xl px-3 md:px-6 w-full h-16 md:h-20 border-4 border-opacity-20 border-black transition delay-100
         ease-out focus:text-tuni focus:outline-none focus:border-tuni"
         :placeholder="messages[language].searchPlaceholder">
+
+      <nav class="flex flex-col md:flex-row mt-4">
+        <button
+          :class="buttonClass(1)"
+          class="flex-grow p-4 transition ease-out duration-300"
+          @click.prevent="cat = 1">Mielenterveyttä tukeva arki</button>
+
+        <button
+          :class="buttonClass(2)"
+          class="flex-grow p-4 transition ease-out duration-300"
+          @click.prevent="cat = 2">Osallisuus</button>
+
+        <button
+          :class="buttonClass(3)"
+          class="flex-grow p-4 transition ease-out duration-300"
+          @click.prevent="cat = 3">Tunnetaidot</button>
+      </nav>
     </div>
 
     <div class="xl:-m-1.5">
