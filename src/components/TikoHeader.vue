@@ -34,7 +34,7 @@ export default {
 
 <style lang="postcss">
 .statistics {
-  @apply flex;
+  @apply flex mb-3;
 }
 
 .stat {
@@ -76,6 +76,9 @@ export default {
           <h2><span class="stat-number">19</span> <span v-text="messages[language].games"></span></h2>
         </div>
       </div>
+
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd6NB2xLpT04qK46ti27d7nQeEotjdgV-zLx65QJL5gUceaTg/viewform"
+        class="mt-5 bg-tuni text-white rounded-full border-tuni p-5 px-10">Äänestä parasta peliä</a>
     </div>
   </header>
 </template>
