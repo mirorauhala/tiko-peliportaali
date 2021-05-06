@@ -10,7 +10,6 @@
   ></tiko-header>
 
   <tiko-small-header
-    :language="language"
     v-else
   ></tiko-small-header>
 
