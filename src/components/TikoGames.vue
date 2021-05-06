@@ -70,12 +70,12 @@ export default {
         <button
           :class="buttonClass(2)"
           class="flex-grow p-4 transition ease-out duration-300"
-          @click.prevent="cat = 2">Osallisuus</button>
+          @click.prevent="cat = 2">Tunnetaidot</button>
 
         <button
           :class="buttonClass(3)"
           class="flex-grow p-4 transition ease-out duration-300"
-          @click.prevent="cat = 3">Tunnetaidot</button>
+          @click.prevent="cat = 3">Osallisuus</button>
       </nav>
     </div>
 
