@@ -13,6 +13,10 @@ module.exports = {
       ...theme('colors'),
       'tuni': '#570099',
     }),
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'tuni': '#570099',
+    }),
     extend: {},
   },
   variants: {
