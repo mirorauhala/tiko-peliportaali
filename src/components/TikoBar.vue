@@ -75,7 +75,7 @@ export default {
         <li>
           <button @click.prevent="this.updatePage('about')">Tietoa</button>
         </li>
-        <li class="hidden">
+        <li>
           <button @click.prevent="this.updatePage('webinar')">Webinaari</button>
         </li>
         <li><button @click="updateLanguage" v-text="messages[language].language"></button></li>
