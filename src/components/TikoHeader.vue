@@ -78,7 +78,7 @@ export default {
       </div>
 
       <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd6NB2xLpT04qK46ti27d7nQeEotjdgV-zLx65QJL5gUceaTg/viewform"
-        class="mt-5 bg-tuni text-white rounded-full border-tuni p-5 px-10">Äänestä parasta peliä</a>
+        class="mt-5 bg-tuni text-white rounded-full border-tuni p-5 px-10">Äänestä parasta peliä viimeistään 11.5.2021</a>
     </div>
   </header>
 </template>
