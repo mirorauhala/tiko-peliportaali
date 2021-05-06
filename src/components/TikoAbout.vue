@@ -1,4 +1,5 @@
 <template>
+  <tiko-small-header>About</tiko-small-header>
   <article
     class="max-w-4xl mx-auto mb-12 px-3">
     <p class="text-lg mb-5 leading-relaxed">Kevään 2021 toimeksiantona on ollut kehittää mobiilipelejä TAMKin hankkeelle nimeltä <a href="https://www.tuni.fi/fi/tutkimus/elaytyen-osalliseksi" class="text-tuni underline">Eläytyen osalliseksi (ELOS)</a>. Opiskelijat ovat tehneet peliprojektia tammikuusta lähtien. Pelejä ollaan työstetty ELOS-hankkeen kolmen eri sisällöllisen teeman kautta, jotka ovat mielenterveyttä tukeva arki, osallisuus ja tunnetaidot. Tavoitteena on ollut tehdä mobiilipelejä, jotka tukevat nuoria ja heidän kasvattajiaan näiden kolmen teeman kautta:</p>
@@ -17,8 +18,13 @@
 </template>
 
 <script>
+import TikoSmallHeader from "./TikoSmallHeader.vue";
+
 export default {
   name: 'tiko-about',
   props: ['language'],
+  components: {
+    TikoSmallHeader
+  }
 }
 </script>

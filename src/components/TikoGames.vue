@@ -1,8 +1,10 @@
 <script>
 import games from '../games';
+import TikoHeader from "./TikoHeader.vue";
 
 export default {
   name: 'TikoGames',
+  components: {TikoHeader},
   props: ['language'],
 
   data() {
@@ -46,6 +48,9 @@ export default {
 </script>
 
 <template>
+  <tiko-header
+    :language="language"
+  ></tiko-header>
   <section class="max-w-7xl mx-auto mb-12">
     <div class="px-1.5 xl:px-0 mb-3 md:mb-5">
       <h1 class="text-4xl font-bold mb-5 text-center" v-text="messages[language].heading"></h1>
