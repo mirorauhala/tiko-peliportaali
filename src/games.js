@@ -30,7 +30,7 @@ export default [
   },
   {
     id: 2,
-    name: 'The name of the game goes here',
+    name: 'When the march ends',
     team: '20tiko1b',
     link: 'https://webpages.tuni.fi/20tiko1b',
     image: tiko1b,
