@@ -12,7 +12,7 @@
 
     <p class="text-lg mb-5 leading-relaxed">Pelien kohderyhmänä ovat 15-18 -vuotiaat nuoret yläkoulussa ja toisella asteella sekä opettajat ja ammattikasvattajat yläkoulussa ja toisella asteella.</p>
 
-    <p class="text-lg mb-5 leading-relaxed">Projektissa valmistuneisiin peleihin voit tutustua tämän peliportaalin kautta. Jos pelien lisäksi haluat tutustua myös peliprojektiin ja hankkeeseen, tule paikalle peliprojektin webinaariin keskiviikkona 12.5.2021 klo 12.00 alkaen. Webinaarin ohjelma julkaistaan näillä sivuilla viimeistään pe 7.5. Voit tutustua peleihin ennakkoon ja äänestää mielestäsi parasta peliä. Äänestyslomake julkaistaan pe 7.5. Äänestäjien kesken arvotaan 50 euron lahjakortti.
+    <p class="text-lg mb-5 leading-relaxed">Projektissa valmistuneisiin peleihin voit tutustua tämän peliportaalin kautta. Jos pelien lisäksi haluat tutustua myös peliprojektiin ja hankkeeseen, tule paikalle peliprojektin webinaariin keskiviikkona 12.5.2021 klo 12.00 alkaen. Webinaarin ohjelma julkaistaan näillä sivuilla viimeistään pe 7.5. Voit tutustua peleihin ennakkoon ja äänestää mielestäsi parasta peliä. Äänestyslomake julkaistaan pe 7.5. Äänestäjien kesken arvotaan 50 euron lahjakortti. Äänestys päättyy 11.5. klo 15.00.
     </p>
   </article>
 </template>
