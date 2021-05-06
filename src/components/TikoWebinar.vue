@@ -1,7 +1,7 @@
 <template>
   <tiko-small-header>Webinaari</tiko-small-header>
   <article class="max-w-4xl mx-auto mb-12 px-3">
-    <div class="overflow-scroll">
+    <div class="overflow-auto">
       <table class="table-auto">
         <tr>
           <td class="p-3 border border-tuni text-tuni font-medium">12.00</td>
