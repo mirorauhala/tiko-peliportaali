@@ -77,8 +77,10 @@ export default {
         </div>
       </div>
 
-      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd6NB2xLpT04qK46ti27d7nQeEotjdgV-zLx65QJL5gUceaTg/viewform"
-        class="mt-5 bg-tuni text-white rounded-full border-tuni p-5 px-10">Äänestä parasta peliä viimeistään 11.5.2021</a>
+      <a target="_blank" href="https://tuni.zoom.us/j/64660365038?pwd=eEFndzhSdUxsRDVUNS9JUlZaSGl5dz09"
+        class="mt-5 bg-tuni text-center text-white rounded-full border-tuni p-5 px-10">Osallistu webinaariin</a>
+
+      <p class="mt-2 text-center p-5 px-10 text-gray-500">Zoom passcode: 930728</p>
     </div>
   </header>
 </template>
