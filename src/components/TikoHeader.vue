@@ -76,6 +76,11 @@ export default {
           <h2><span class="stat-number">19</span> <span v-text="messages[language].games"></span></h2>
         </div>
       </div>
+
+      <a target="_blank" href="https://tuni.zoom.us/j/64660365038?pwd=eEFndzhSdUxsRDVUNS9JUlZaSGl5dz09"
+        class="mt-5 bg-tuni text-center text-white rounded-full border-tuni p-5 px-10">Osallistu webinaariin</a>
+
+      <p class="mt-2 text-center p-5 px-10 text-gray-500">Zoom passcode: 930728</p>
     </div>
   </header>
 </template>
