@@ -8,6 +8,7 @@
   <tiko-games
     :language="language"
     v-if="currentPage === 'games'"
+    @pageChange="updatePage"
   ></tiko-games>
 
   <tiko-about

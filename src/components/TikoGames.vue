@@ -29,7 +29,10 @@ export default {
   methods: {
     buttonClass(active) {
       return this.cat === active ? 'bg-tuni text-white hover:text-white hover:text-opacity-80' : 'text-tuni'
-    }
+    },
+    updatePage(page) {
+      this.$emit('pageChange', page)
+    },
   },
   computed: {
     resultQuery() {
@@ -50,6 +53,7 @@ export default {
 <template>
   <tiko-header
     :language="language"
+    @pageChange="updatePage"
   ></tiko-header>
   <section class="max-w-7xl mx-auto mb-12">
     <div class="px-1.5 xl:px-0 mb-3 md:mb-5">
