@@ -33,12 +33,6 @@
     <div class="mb-3">
       <h3 class="font-bold text-tuni">Yleisöäänestyksen voittaja</h3>
       <p><b>Mental Survival</b></p>
-      <ul class="list-disc list-inside">
-        <li>Santeri Puttonen</li>
-        <li>Joona Rämö</li>
-        <li>Joel Eklund</li>
-        <li>Edgar Sarelainen</li>
-      </ul>
     </div>
 
 
